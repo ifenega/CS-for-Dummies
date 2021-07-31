@@ -17,14 +17,14 @@ namespace Chapter_5_Solution_2
             Console.Write("Enter third number: ");
             int c = Int32.Parse(Console.ReadLine());
 
-            if (a < 0 && b < 0 && c < 0) Console.WriteLine("-");
-            else if (a >= 0 && b >= 0 && c >= 0) Console.WriteLine("+");
-            else if (a < 0 && b < 0 && c >= 0) Console.WriteLine("+");
-            else if (a < 0 && b >= 0 && c < 0) Console.WriteLine("+");
-            else if (a >= 0 && b < 0 && c < 0) Console.WriteLine("+");
-            else if (a < 0 && b >= 0 && c >= 0) Console.WriteLine("-");
-            else if (a >= 0 && b < 0 && c >= 0) Console.WriteLine("-");
-            else if (a >= 0 && b >= 0 && c < 0) Console.WriteLine("-");
+            if  ((a>0&&b>0&&c<0)||(a>0&&b<0&&c>0)||(a<0&&b>0&&c>0)||(a<0&&b<0&&c<0))
+            {
+                Console.WriteLine("the result is be negative");
+            }
+            else
+            {
+                Console.WriteLine("the result is positive");
+            }
         }
     }
 }
